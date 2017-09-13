@@ -53,6 +53,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    ro.af.client_heap_size_kbyte=7168 \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio.hw.aac.encoder=true \
