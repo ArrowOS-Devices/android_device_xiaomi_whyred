@@ -201,6 +201,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.s5k3l8_ofilm.low.lux=379 \
     persist.s5k3l8_ofilm.light.lux=367
 
+# MiuiCamera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.shutter_sound.blacklist=com.android.camera
+
 #
 # PROPERTIES FOR IMS
 #
