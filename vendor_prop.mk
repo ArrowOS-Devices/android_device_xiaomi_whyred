@@ -143,11 +143,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
-# WFD
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
-
 #property for vendor specific library
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.at_library=libqti-at.so
