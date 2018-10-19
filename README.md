@@ -1,5 +1,3 @@
-Copyright 2018 - The Mokee Project
-
 The Redmi Note 5 (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi.
 
 Xiaomi Redmi Note 5 was announced and released in March 2018.
