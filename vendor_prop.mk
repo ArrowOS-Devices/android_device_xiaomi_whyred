@@ -69,3 +69,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
+
+# hal3
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1
+
+# hal1 apps
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android
