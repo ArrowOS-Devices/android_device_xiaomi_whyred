@@ -1,0 +1,10 @@
+[
+  { 
+    "repository":  "PotatoDevices/kernel_xiaomi_whyred",
+    "target_path": "kernel/xiaomi/whyred"
+  },
+  {
+    "repository": "PotatoDevices/vendor_xiaomi_whyred",
+    "target_path": "vendor/xiaomi/whyred"
+  }
+]
