@@ -30,3 +30,9 @@
 
 # Video4linux sysfs nodes
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
+
+# Wlan
+/sys/devices/soc/18800000.qcom,icnss/net/wlan0(/.*)?    u:object_r:sysfs:s0
+
+# P2p0
+/sys/devices/soc/18800000.qcom,icnss/net/p2p0(/.*)?	u:object_r:sysfs:s0
