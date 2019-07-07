@@ -1171,6 +1171,7 @@ vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437
 vendor/lib64/libdisp-aba.so|09a8d5f64b3a6f6f57971ad6fab62cfde4e98547
 vendor/lib64/vendor.display.color@1.0.so|87cdeb262dd2b84e888c1f054cd39ecb863a7565
 vendor/lib64/vendor.display.color@1.1.so|3c766f216fc8d5e2562d62e8cb948f84e94fcdaa
+vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so|f663bc0134d0b687e909ecc9a86c3f19c9d26eb1
 
 # QMI - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
