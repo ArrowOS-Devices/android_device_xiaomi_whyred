@@ -1050,19 +1050,14 @@ vendor/lib64/hw/vulkan.sdm660.so|902237d165c22a3609787c1874b63aa7abb677be
 vendor/lib/hw/keystore.sdm660.so|ad49563962736752cd094b113e46658e1b5e6d39
 vendor/lib64/hw/keystore.sdm660.so|645881b7a2709dfce5d6b9be9df4659ec2ab0eac
 
-# Listen - from LA.UM.7.2.r1-06900-sdm660.0
-vendor/lib/hw/sound_trigger.primary.sdm660.so|bd7ce820f661e269dbb7ff68a7123f0247e225bc
-vendor/lib/libadpcmdec.so|7c12a153200fd2e9f1f6139fcf40beee1a96f48d
-vendor/lib/libgcs-calwrapper.so|79f99e29bf13b21cfa356cd805f363cc19efc59e
-vendor/lib/libgcs-ipc.so|6028691d48595aa9037b75aa731c0a05472bf2e2
-vendor/lib/libgcs-osal.so|302b254ab3afc2f088bdb9a0c8564055b4eca4af
-vendor/lib/libgcs.so|9357ae12df1096f478df6488a9199ab2baf41d45
-vendor/lib/libsmwrapper.so|05c0a44547291719a32a52fb8db102c6d19e9315
-vendor/lib64/hw/sound_trigger.primary.sdm660.so|f8626e5c30047a73373b64e44a9ea02886354844
-vendor/lib64/libgcs-calwrapper.so|8551451d41e218a5443efc2dc128277fe9741e0c
-vendor/lib64/libgcs-ipc.so|027147c87f15a8cb2e5f54e8d8e56d33b9476e47
-vendor/lib64/libgcs-osal.so|d70699bde8fe27c77bc6d858ff4cd5137c5ed36b
-vendor/lib64/libgcs.so|89b765782c7a4d935bce8954e8161d0f7ab07c50
+# Listen
+vendor/lib/hw/sound_trigger.primary.sdm660.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.7.2.r1-06900-sdm660.0
 lib/libmmosal.so|ca8714ad8bd64ae9d23222df6098fbb949e75d96
