@@ -71,6 +71,9 @@ function blob_fixup() {
     product/lib64/libdpmframework.so)
         patchelf --add-needed libcutils_shim.so "${2}"
         ;;
+    vendor/lib/hw/camera.sdm660.so)
+        patchelf --add-needed libcamera_sdm660_shim.so "${2}"
+        ;;
     esac
 }
 
