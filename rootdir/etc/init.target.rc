@@ -397,3 +397,12 @@ on property:persist.sys.display_gamma=1
 
 on property:persist.sys.display_gamma=2
     write /sys/class/graphics/fb0/msm_fb_gamma 2
+
+# Smart Charging
+#Huaqin add for control charge by zhangjingzhi at 20180129 start
+on boot 
+chown system system /sys/class/power_supply/battery/charging_enabled 
+chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+chown system system /sys/class/power_supply/battery/input_suspend 
+chmod 0666 /sys/class/power_supply/battery/input_suspend
+#Huaqin add for control charge by zhangjingzhi at 20180129 end
