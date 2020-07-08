@@ -108,10 +108,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
-# Make data selection stick in dual SIM devices
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.radio.aosp_usr_pref_sel=true
-
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
