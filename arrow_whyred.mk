@@ -31,6 +31,7 @@ $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+DEVICE_MAINTAINER := Sreekanth
 PRODUCT_NAME := arrow_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
