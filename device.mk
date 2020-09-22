@@ -435,6 +435,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/audio-caf-msm8998 \
     hardware/qcom/media-caf-msm8998
 
+# Some more packages for R
+PRODUCT_HOST_PACKAGES += \
+    signapk \
+    avbtool \
+    brotli \
+    aapt2
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -450,7 +457,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml
+    qti_telephony_utils.xml \
+    librilutils
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -508,3 +516,17 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
     WfdCommon
+# Allow debug
+PRODUCT_PACKAGES += \
+ libhwbinder \
+ libhwbinder.vendor
+
+# Media addons
+PRODUCT_PACKAGES += \
+    libavservices_minijail_vendor
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
