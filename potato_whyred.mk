@@ -29,10 +29,10 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 
 # Inherit some common Lineage stuff.
-#$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 DEVICE_MAINTAINER := Sreekanth
-PRODUCT_NAME := aosp_whyred
+PRODUCT_NAME := potato_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
