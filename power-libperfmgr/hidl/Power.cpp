@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.pixel-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr"
+
+#include "Power.h"
+
+#include <mutex>
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -24,18 +28,13 @@
 #include <utils/Log.h>
 #include <utils/Trace.h>
 
-#include "Power.h"
 #include "power-helper.h"
 
 /* RPM runs at 19.2Mhz. Divide by 19200 for msec */
 #define RPM_CLK 19200
 
 #ifndef TAP_TO_WAKE_NODE
-#define TAP_TO_WAKE_NODE "/sys/touchpanel/double_tap"
-#endif
-
-#ifndef TAP_TO_WAKE_NODE2
-#define TAP_TO_WAKE_NODE2 "/proc/tp_gesture"
+#define TAP_TO_WAKE_NODE "/proc/tp_gesture"
 #endif
 
 extern struct stat_pair rpm_stat_map[];
@@ -154,7 +153,6 @@ Return<void> Power::setFeature(Feature feature, bool activate)  {
 #ifdef TAP_TO_WAKE_NODE
         case Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
             ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE, true);
-            ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE2, true);
             break;
 #endif
         default:

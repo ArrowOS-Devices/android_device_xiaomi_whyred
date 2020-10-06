@@ -211,7 +211,7 @@ on boot
 
     # Touchscreen
     chown system system /proc/tp_gesture
-    chmod 0660  /proc/tp_gesture
+    chmod 0664  /proc/tp_gesture
 
     #add for display feature
     chown system system /sys/class/graphics/fb0/msm_fb_ce

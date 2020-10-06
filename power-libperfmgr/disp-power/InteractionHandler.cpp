@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.pixel-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr"
 
 #include <fcntl.h>
 #include <poll.h>
@@ -64,8 +64,7 @@ bool InteractionHandler::Init() {
     if (mState != INTERACTION_STATE_UNINITIALIZED)
         return true;
 
-    int fd = fb_idle_open();
-    mIdleFd = fd;
+    mIdleFd = fb_idle_open();
 
     mEventFd = eventfd(0, EFD_NONBLOCK);
     if (mEventFd < 0) {
@@ -124,8 +123,10 @@ size_t InteractionHandler::CalcTimespecDiffMs(struct timespec start, struct time
 void InteractionHandler::Acquire(int32_t duration) {
 
     std::lock_guard<std::mutex> lk(mLock);
-    if (mState == INTERACTION_STATE_UNINITIALIZED)
+    if (mState == INTERACTION_STATE_UNINITIALIZED) {
+        ALOGW("%s: called while uninitialized", __func__);
         return;
+    }
 
     int inputDuration = duration + 650;
     int finalDuration;
@@ -192,11 +193,6 @@ void InteractionHandler::WaitForIdle(int32_t wait_ms, int32_t timeout_ms) {
 
     ALOGV("%s: wait:%d timeout:%d", __func__, wait_ms, timeout_ms);
 
-    if (mIdleFd < 0) {
-        usleep(wait_ms + timeout_ms);
-        return;
-    }
-
     pfd[0].fd = mEventFd;
     pfd[0].events = POLLIN;
     pfd[1].fd = mIdleFd;
@@ -208,6 +204,18 @@ void InteractionHandler::WaitForIdle(int32_t wait_ms, int32_t timeout_ms) {
         return;
     } else if (ret < 0) {
         ALOGE("%s: error in poll while waiting", __func__);
+        return;
+    }
+
+    if (mIdleFd < 0) {
+        ret = poll(pfd, 1, timeout_ms);
+        if (ret > 0) {
+            ALOGV("%s: wait for duration aborted", __func__);
+            return;
+        } else if (ret < 0) {
+            ALOGE("%s: Error on waiting for duration (%zd)", __func__, ret);
+            return;
+        }
         return;
     }
 
