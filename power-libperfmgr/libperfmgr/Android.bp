@@ -13,8 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-soong_namespace {
-}
 
 cc_defaults {
     name: "libperfmgr_defaults",
