@@ -177,6 +177,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 TARGET_COPY_OUT_VENDOR := vendor
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Power
 TARGET_PROVIDES_POWERHAL := true
 
