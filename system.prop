@@ -201,7 +201,7 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.ltm.overlap=13
 
 # HAL1 apps list
-vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
+vendor.camera.hal1.packagelist=com.intsig.camscanner,com.instagram.android
 
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
