@@ -1312,11 +1312,11 @@ vendor/etc/sensors/sensor_def_qcomdev.conf|33214fd4ac19fc6ba500017095b205251573a
 vendor/lib/hw/activity_recognition.sdm660.so|9d7160dc8661957de705ce6b79942c41614ff7c8
 vendor/lib/libsensor_reg.so|af6296fe9495b370300634c008c02d356ce38092
 vendor/lib/libsensor1.so|a34ac1e81a8eb93efe434829d74809a5aa307d3c
-vendor/lib/sensors.ssc.so|0080d2b919f8465c090d7052d0f7d9a92c30a6e5
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
 vendor/lib64/hw/activity_recognition.sdm660.so|5579e6b9dd041e4d70148247036b97cac15832cd
 vendor/lib64/libsensor_reg.so|fc339a65dafb44a629e6d83c13e8af71c293c53b
 vendor/lib64/libsensor1.so|322bd23852df0a0d6bfebf854e76f0181aa5ca7b
-vendor/lib64/sensors.ssc.so|0e98582e5ca6c9960474945acdef427083b13177
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
 # Soter - from jasmine-user-10-QKQ1.190910.002-V11.0.4.0.QDIMIXM
 -app/SoterService/SoterService.apk|13c54938361c79d484f8750e548415a9a4526b43
