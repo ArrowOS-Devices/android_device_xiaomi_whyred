@@ -26,6 +26,9 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_whyred u:object_r:hal_light_default_exec:s0
 
+# Service HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
+
 # Touchscreen
 /proc/tp_gesture u:object_r:sysfs_tap_to_wake:s0
 
