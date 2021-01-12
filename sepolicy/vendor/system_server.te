@@ -11,3 +11,9 @@ allow system_server sysfs_kgsl:lnk_file { read };
 # Fingerprint
 r_dir_file(system_server, idc_file)
 r_dir_file(system_server, keylayout_file)
+
+allow system_server userspace_reboot_exported_prop:file { read open getattr };
+allow system_server userspace_reboot_config_prop:file { read open getattr };
+allow system_server exported_camera_prop:file { read open getattr };
+
+allow system_server hal_light_default:process signal;

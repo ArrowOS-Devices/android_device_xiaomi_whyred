@@ -1,0 +1,1 @@
+allow hal_bluetooth_qti vfat:file { read open getattr };

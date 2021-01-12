@@ -1,0 +1,2 @@
+allow qti_init_shell vfat:file { read open getattr };
+allow qti_init_shell vfat:dir search;

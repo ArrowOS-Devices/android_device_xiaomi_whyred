@@ -1,3 +1,5 @@
 allow init firmware_file:filesystem getattr;
 allow init bt_firmware_file:filesystem getattr;
 allow init vendor_file:file { execute };
+allow init debugfs_rpm:file relabelfrom;
+allow init vendor_file:file { execute };

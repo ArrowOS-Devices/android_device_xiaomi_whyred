@@ -1,1 +1,1 @@
-allow hvdcp sysfs:file { read };
+allow hvdcp sysfs:file { read open getattr };

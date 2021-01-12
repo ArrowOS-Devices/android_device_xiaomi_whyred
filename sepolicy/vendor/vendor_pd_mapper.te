@@ -1,0 +1,2 @@
+allow vendor_pd_mapper vfat:file { read open getattr };
+allow vendor_pd_mapper vfat:dir { open search };
