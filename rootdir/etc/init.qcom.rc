@@ -500,6 +500,7 @@ on property:persist.debug.trace=1
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
+    group root system
     oneshot
 
 on property:vendor.media.target.version=*
