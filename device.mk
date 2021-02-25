@@ -394,7 +394,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr
+    android.hardware.power-service.xiaomi_sdm660-libperfmgr
 
 # Powerhint
 PRODUCT_COPY_FILES += \
@@ -523,6 +523,9 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vndk-ext \
     vndk_package
+
+EXTRA_SYSTEM_LIBRARIES_64 := \
+    libblasV8
 
 # Wifi
 PRODUCT_PACKAGES += \
