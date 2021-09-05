@@ -520,9 +520,6 @@ PRODUCT_PACKAGES += \
     libmediaextractorservice \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Allow debug
 PRODUCT_PACKAGES += \
  libhwbinder \
