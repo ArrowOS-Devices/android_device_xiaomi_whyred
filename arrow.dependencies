@@ -6,5 +6,9 @@
  {
    "repository": "android_kernel_xiaomi_whyred",
    "target_path": "kernel/xiaomi/whyred"
- }
+ },
+  {
+    "repository": "android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras"
+  }
 ]
