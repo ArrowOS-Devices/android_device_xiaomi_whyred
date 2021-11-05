@@ -145,6 +145,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     libbthost_if \
     libldacBT_dec
@@ -163,6 +164,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.frameworks.displayservice@1.0 \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
@@ -219,11 +221,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3-service.widevine
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_whyred
 
 PRODUCT_COPY_FILES += \
@@ -252,6 +259,7 @@ PRODUCT_PACKAGES += \
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0.vendor \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.authsecret@1.0-service
 
@@ -272,6 +280,15 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libsensorndkbridge
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@1.2.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@3.0.vendor \
 
 # Health
 PRODUCT_PACKAGES += \
@@ -317,7 +334,8 @@ PRODUCT_PACKAGES += \
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0.vendor
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -326,7 +344,7 @@ PRODUCT_COPY_FILES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
-    
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl \
@@ -336,6 +354,7 @@ PRODUCT_COPY_FILES += \
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@3.0-service
 
 # Lights
@@ -354,11 +373,13 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
+    android.system.net.netd@1.1.vendor \
     libandroid_net \
     netutils-wrapper-1.0
 
 # OMX
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -439,9 +460,13 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
@@ -501,6 +526,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.5.vendor \
     android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
