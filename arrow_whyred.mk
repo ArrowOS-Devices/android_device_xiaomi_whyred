@@ -28,8 +28,9 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 DEVICE_MAINTAINER := Sreekanth
 PRODUCT_NAME := arrow_whyred
