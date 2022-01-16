@@ -85,6 +85,9 @@ persist.vendor.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
 
+# System
+persist.sys.binary_xml=false
+
 # system property for maximum number of HFP client connections
 bt.max.hfpclient.connections=1
 
